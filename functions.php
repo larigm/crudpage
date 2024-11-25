@@ -1,9 +1,9 @@
 <?php
 function pdo_connect_mysql() {
     $DATABASE_HOST = 'sql.crudpage.com';
-    $DATABASE_USER = 'cruduser';
+    $DATABASE_USER = 'catdb';
     $DATABASE_PASS = '12345';
-    $DATABASE_NAME = 'cruddb';
+    $DATABASE_NAME = 'catdb';
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {
